@@ -1,0 +1,160 @@
+# To add more map follow this format:
+#
+#   ---Artname: {YourArtName}---
+#   ---ArtStart---
+#   ---ArtEnd---
+#   ---ColorStart---
+#   ---ColorEnd---
+#   ---DetailStart---
+#   ---DetailEND---
+#   ---END---
+#
+# Map detail:
+#     player_startLocation x,y
+#     intro=sth sth, sep by this; if u want in same page use\nSecond line!;Can use to tell how player where to go
+#
+# Remark:
+#     The order of the art color or detail dont matter.
+#     Color and Detail could be absent
+#     More frame can be add, just ---ArtStart--- and ---ArtEnd--- for each frame and also color for each frame
+#     Number of frame/art and color can be different, the last will cover the rest (e.g. 2 frame 3 color, the last frame of those 2 frame will duplicate and using 3rd color)
+#     Please remember to add ---sthEND--- to ensure its the end and ---END--- at last
+#     Color are using [index color index color index color ...] format
+#     Color default [Red, Yellow, Blue, Black, Cyan, Green, BRed, BYellow, BBlue, BBlack, BCyan, BGreen, rgb]
+#     Color rgb ... wait for update :)
+#
+#
+# Example of color definition in a block:
+# ---ColorStart---
+# 150 BYellow             meaning 0 - 150 all BYellow
+# 30 Red 150 BRed         meaning 0 - 30 all Red and 31 - 150 all BRed
+# 7 Red 9 BYellow 66 Red  meaning 0 - 7 all Red and 7 - 9 all BYellow 10 - 66 all Red 66 - rest default color of the terminal
+# ---ColorEnd---
+
+
+---Artname: Default_Map1---
+---ArtStart---
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▉                 ▉       ▉          ▉▉           ▉       🎰       ▉                               ▉
+▉                 ▉      ▉              ▉▉        ▉                ▉                               ▉
+▉                 ▉      ▉           ▉▉▉          ▉                ▉                               ▉
+▉                 ▉    ▉               ▉▉         ▉                ▉                               ▉
+▉                 ▉   ▉      ▉      ▇▇▇▇▉         ▉                ▉                               ▉
+▉                 ▉    ▉                          ▉                ▉                               ▉
+▉                 ▉     ▉   ▉    ▉       ▉        ▉                ▉                               ▉
+▉                 ▉     ▉   ▇▇▇        ▉ ▇▇       ▉                ▉                               ▉
+▉                 ▉     ▉      ▉ ▉      ▇▇ ▇▇     ▉                ▉                               ▉
+▉                 ▉                ▉         ▇▇   ▉                ▉                               ▉
+▉                 ▇▇▇▇▇▇▇▇▇▇▇▇▇▇X    ▇▇▇▇▇▇▇▇▇▇▇▇▇▇                ▇▇▇▇▇▇▇▇▇▇▇▇▇▇X  XX▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▉                                                                                                  ▉
+▉                                                                                                 🔒
+▉                                                                                                 🔒
+▉                                                                                                  ▉
+▉                 ▇▇▇▇▇▇▇▇▇▇▇▇▇▇  XXX▇▇▇▇▇▇▇▇▇▇▇▇▇▇                ▇▇▇▇▇▇▇▇▇▇▇▇▇▇X   X▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▉                 ▉             ▉                 ▉                ▉                               ▉
+▉                 ▉                     ▉ ▉       ▉                ▉                               ▉
+▉                 ▉                      ▉  ▉     ▉                ▉                               ▉
+▉                 ▉            ▇▇▇▇▇    ▉ ▉ ▉     ▉                ▉                            ▇▇ ▉
+▉                 ▉             ▇ ▇ ▇             ▉                ▉           ▇   ▇          ▇ ▇  ▉
+▉                 ▉            ▇    ▇             ▉                ▉      ▇       ▇        ▇   ▇   ▉
+▉                 ▉                               ▉                ▉      ▇      ▇           ▇  ▇  ▉
+▉                 ▉            ▇▇    ▇▇           ▉                ▉       ▇▇   ▇        ▇   ▇     ▉
+▉                 ▉            ▇       ▇▇         ▉                ▉      ▇                 ▇  ▇   ▉
+▉                 ▉          ▇▇▇        ▇▇▇       ▉       🏪       ▉    ▇               ▇          ▉
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+---ArtEnd---
+
+---DetailStart---
+player_startLocation=1,1
+intro=Hi \name/!;You are a gamer;One day, you found a game called 'Slot Dungeon: The Casino Caverns'.;But \name/, you are now in the game!
+enemyLocation=81,1
+enemyLocation=33,1
+enemyLocation=82,26
+enemyLocation=35,26
+---DetailEND---
+
+---END---
+
+---Artname: Default_Map2---
+---ArtStart---
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▉     🏪          ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇                               ▉
+▉                 ▉                                                                                ▉
+▉                 ▉                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▇▇▇▇▇▇▇▇▇▇▇▇▇▇XXXXX▇▇▇▇▇▇▇▇▇▇▇▇▇▇                ▇▇▇▇▇▇▇▇▇▇▇▇▇▇     ▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▉                                                                                                  ▉
+▉                                                                                                 🔒
+▉                                                                                                 🔒
+▉                                                                                                  ▉
+▉                 ▇▇▇▇▇▇▇▇▇▇▇▇▇▇     ▇▇▇▇▇▇▇▇▇▇▇▇▇▇                ▇▇▇▇▇▇▇▇▇▇▇▇▇▇XXXXX▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇                               ▉
+▉                 ▉                                                                                ▉
+▉                 ▉                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉                 ▉                               ▉                ▉                               ▉
+▉      🎰         ▉                               ▉                ▉                               ▉
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+---ArtEnd---
+
+---DetailStart---
+player_startLocation=1,14
+intro=! Well done \name/ !;!!! Well done \name/ !!!;You go down 1 floor;It gets harder to defeat;But!;I trust you, \name/!;Good Luck!
+enemyLocation=33,1
+enemyLocation=81,1
+enemyLocation=82,26
+enemyLocation=35,26
+---DetailEND---
+
+---END---
+
+
+---Artname: Default_Map3---
+---ArtStart---
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▉🌼🌳🌸🪻🌸🪻🪻🌲🪻🪻🪻🪻🌷🌲🌳🌳🌳🌲🔒🔒🔒🔒🔒🔒🔒🔒🔒🔒🔒🔒🔒🌲🌲🌳🌲🌲🪻🌳🪻🪻🌳🪻🪻🪻🪻🌼🪻🌻🪻▉
+▉🌸🌼🌼🪻🌳🪻🪻🪻🪻🪻🪻🪻🪻🌲🌲🌳                                🌳🌳🌲🪻🌲🪻🌻🪻🌲🌷🌸🪻🪻🪻🪻🪻🪻▉
+▉🌼🌲🌼🌼🌻🪻🪻🪻🌸🪻🌷🪻🪻🪻🌳🌳🌲🌳                                 🌳🌳🪻🪻🌲🌷🌳🪻🪻🪻🪻🪻🌼🪻 ▉
+▉🌼🌲🌲🌼🌻🪻🌷🌳🪻🪻🪻🪻🪻🌳🌲🌻                                🌳🌳🌳🪻🪻🌷🌷🌲🌻🪻🌻🪻🪻🪻🌷🌳🪻▉
+▉🌷🌲🌼🌼🌲🌷🌸🌲🪻🌻🪻🪻🌲🌳🌲                              🌷🌲🌳🌳🪻🪻🌻🪻🌳🌸🌲🪻🪻🪻🌷🌻🪻🪻🪻▉
+▉🪻🪻🪻🌸🪻🪻🌹🪻🌷🪻🪻🪻🌷🌲🌲🌲🌺                                🌲🌳🌳🪻🪻🪻🪻🪻🪻🌸🪻🪻🌹🪻🪻🪻▉
+▉🪻🌻🪻🌲🪻🪻🪻🌷🪻🪻🪻🪻🌷🌳🌳🌳                              🌷🌲🌳🌳🪻🌷🪻🪻🌷🌳🪻🪻🌺🪻🌷🌳🪻🪻▉
+▉🪻🪻🪻🌲🪻🌲🪻🪻🌻🪻🪻🌳🌲🌳    🏪                          🌷🌲🌳🌲🌳🪻🪻🪻🪻🌲🪻🌳🪻🪻🌷🌳🪻🪻🪻▉
+▉🪻🌷🌲🪻🍄🌷🌷🌷🪻🪻🌷🪻🪻🌲🌳🌲                                🌲🌲🌳🌷🌷🌳🌷🌷💐🌷🌷🌷🌳🌷🌷🌻🌷▉
+▉🌺🌷🌷🌷🌷🌲🌷🌷🌳🪻🪻🌷🪻🌳🌳🌲🌹                              🌳🌲🌳🪻🌷🌷🌷🌷🌷🪻🌻🌷🌷🌳🌷🌷🌷▉
+▉🌷🌷🌳🌷🌻🌷🪻🌷🌷🌷🪻🪻🌷🌳🌲🌲                              🌲🌳🌳🌲🌷🌷🌷🪻🌷🌲🌷🌷🪻🪻🌺🌷🌷💐▉
+▉🌼🌺🌷🪻🌼🌷🌷🪻🌼🌷🌷🪻🪻🌲🌳🌳🌲                              🌹🌲🌳🌹🌹🌷🌻🌷🌷🌳💐🌻🌷🌷💐🌷🌷▉
+▉🌷🌷🌷🌷🌷🌲🌷🌷🌺🌷🪻🌷🌷🪻🌳🌳🌲                                  🌳🌳🌳🌷🌹🌷🌷🪻🌷🌷🌺🌷🌷🌷🌷▉
+▉🌼🌻🌳🌲🌼🌷🪻🌷🌷🪻🌷🪻🌷🌲🌳🌲                                🌲🌲🌳🌷🌻🌷🌹🌷🌷🌲🌷🌷🌷🪻🌷🌷🌷▉
+▉🌷🌷🌲🌷🌷🌷🌻🌷🌺🌷🪻🪻🌷🌳🌲🌸                                🌳🌳🌲🌳🌷🪻🌷💐🌷🌷💐🪻🌷🌷🌷🌳🌷▉
+▉🌷🌸🌷🌼🌲🌷🌹🌷🌷🪻🪻🪻🌲🌲🌳                                💐🌲🌲🌳🌷🌷🪻🌷🌷🪻🌷🌷🌳🌲🌷🌻🪻🌷▉
+▉🌷🌷🪻💐🌷🌷🪻🌷🪻🌷🪷🪻🌷🌳🌳🌼                              🌲🌳🌳🌳🌷🪻🌳🌷🌷🌳🌷🌷🌷🌳🌷🌳🌷🌷▉
+▉🌷🌲🌷🌳🌷🌳🌷🌹🌷🌷🪻🪻🌷🌷🌲🌳🌲                                🌳🌲🌳🌷🌷🌷🌻🌷🌷🌳🌷🌻🌷🌷🌳🌷▉
+▉🌷🌷🌻🌷🌷🌺🌷🌷🌼🌷🌷🌷🌷🌲🌳🌳                                🌳🌲🌳🌷🌷🌷🌹🌷🪻🌷🌷🌷🌷🌻🌷🌳🪻▉
+▉🪻🌲🌷🌳🪻🌲🪻🌷🪻🌸🌸🌷🌻💐🌲🥀🌲                                🌲🌲🌳🪻🪻💐🪻🪻🪻🪻🌳🌻🪻🪻🪻🪻▉
+▉🌳🪻🌸🪻🌷🌻🌷🪻🌷🪻🪻🪻🥀🌳🌲🌳                              🌷🥀🌲🌲🪻🪻🌷🌹🪻🪻🪻🌻🌸🌻🪻🌳🪻🌷▉
+▉🌸🪻🌲🌷🪻🪻🌹🪻🌷🌲🌻🌳🥀🌳💰                              🌷💰🪻🌳🌷🌲🪻🌻🪻🌲🌻🌳🪻🪻🌷🌺🪻🪻🌷▉
+▉🪻🌳🌻🪻🌲🌲🌷🌹🌹🌹🪻🌲🪻💰💰💰💰🎰  💰💰🌻💰💰🌻💰🌻🌻💰💰💰🌷🌲💰🌻🌲🌻🌻🌻🌻🌻🌼🌷🌸🌻🌳🌻🌻🌻▉
+▉🌼🌻🌸🌷🌼🌻🌻🌻🌷🌷🌷🌼🌷💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰🌷🪷🌷🌼🌷🌳🌷🌷🌸🌷🌺🌷🌳▉
+▉🌼🌷🌷🌻🌼🌷🌷🍄🌷🌷🪻💰💰💰💰💰💰💰💰💰💰🌻💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰🌷🌷🌺🌷🪻🌻🌷🌼🌷🌷🌳🌷▉
+▉🌹🌹🪻🌷🌼🌷🌷🌷💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰💰🌷🌷🌷🌻🪻🌳🌷🌷🌼🌷🌳🌷▉
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+---ArtEnd---
+
+---DetailStart---
+player_startLocation=49,6
+intro=HaHaHa!;You think I'm helping you?;Ha      ;Ha Ha   ;Ha Ha Ha;HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\n\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\n;HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA\nHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA;Now!;Bring it on!;Let's see what you've got!;HAHA...haaau—cough;cough—Oops;laughed too hard there!;:)
+enemyLocation=50,21
+---DetailEND---
+
+---END---
