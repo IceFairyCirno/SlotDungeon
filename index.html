@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dicky Ling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="home-header">
+        <div class="theme-toggle">
+            <button id="theme-toggle" class="theme-toggle-btn">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+        <div class="profile-container">
+            <div class="profile-flip">
+                <div class="profile-front">
+                    <img src="img/Cirno.png" alt="Photo of me" class="profile-img">
+                </div>
+                <div class="profile-back">
+                    <img src="img/MyProfilePic.jpg" alt="Another photo of me" class="profile-img">
+                </div>
+            </div>
+        </div>
+        <h1>Ling Chun Ho</h1>
+        <p class="subtitle">Computer Science & Finance</p>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="work.html">Work Experiences</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education Background</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="split-layout">
+        <div class="about-sidebar">
+            <h2>About me</h2>
+            <p class="intro">
+                I'm a HKU year 2 computer science major with a minor in finance, driven by a passion for technology and its endless possibilities. 
+            </p>
+            <p class="vision">
+                My goal is to blend my technical skills and interests into innovative projects that make an impact, all while enjoying the process!
+            </p>
+        </div>
+        
+        <div class="academic-stats">
+            <div class="stat-item">
+                <div class="stat-value">2.91</div>
+                <div class="stat-label">CGPA</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">2+</div>
+                <div class="stat-label">Projects</div>
+            </div>
+        </div>
+        
+        <div class="interests-blocks">
+            <h2 class="interests-title">My Interests</h2>
+            <div class="interest-container">
+                <button class="interest-nav prev">←</button>
+                <div class="interest-content">
+                    <div class="interest-block active" data-interest="gaming">
+                        <div class="interest-icon">
+                            <img src="img/gaming.png" alt="Gaming Icon">
+                        </div>
+                        <h3>Gaming</h3>
+                        <p>Passionate about playing games and exploring different gaming experiences across various genres and platforms.</p>
+                    </div>
+                    
+                    <div class="interest-block" data-interest="gamedev">
+                        <div class="interest-icon">
+                            <img src="img/gamedev.png" alt="Game Development Icon">
+                        </div>
+                        <h3>Game Development</h3>
+                        <p>Creating games by exploring game mechanics, graphics, and interactive experiences through coding and design.</p>
+                    </div>
+                    
+                    <div class="interest-block" data-interest="web">
+                        <div class="interest-icon">
+                            <img src="img/web.png" alt="Web Development Icon">
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Building responsive and interactive websites using modern technologies and frameworks.</p>
+                    </div>
+                    
+                    <div class="interest-block" data-interest="ml">
+                        <div class="interest-icon">
+                            <img src="img/ml.png" alt="Machine Learning Icon">
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Exploring algorithms and models that enable computers to learn from data and make intelligent decisions.</p>
+                    </div>
+                    
+                    <div class="interest-block" data-interest="llm">
+                        <div class="interest-icon">
+                            <img src="img/llm.png" alt="LLM Icon">
+                        </div>
+                        <h3>Large Language Models</h3>
+                        <p>Studying and experimenting with advanced language models and their applications in natural language processing.</p>
+                    </div>
+                </div>
+                <button class="interest-nav next">→</button>
+            </div>
+            <div class="interest-dots"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
